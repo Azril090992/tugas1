@@ -1,52 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
-    <title>CV Simple</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Azril Wijaya Ramadhan</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        color: white;
+        padding: 40px;
+        text-align: center;
+        position: relative;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px solid white;
+        margin: 0 auto 20px;
+        background: linear-gradient(45deg, #3498db, #2ecc71);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .contact-info {
+        font-size: 1.1em;
+        opacity: 0.9;
+      }
+
+      .contact-info span {
+        margin: 0 10px;
+      }
+
+      .content {
+        padding: 40px;
+      }
+
+      .section {
+        margin-bottom: 35px;
+      }
+
+      .section h2 {
+        color: #2c3e50;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 3px solid #3498db;
+        position: relative;
+      }
+
+      .section h2::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: #e74c3c;
+      }
+
+      .section p {
+        margin-bottom: 10px;
+        text-align: justify;
+        line-height: 1.7;
+      }
+
+      .education-item,
+      .experience-item {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border-left: 4px solid #3498db;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .education-item:hover,
+      .experience-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .education-item strong,
+      .experience-item strong {
+        color: #2c3e50;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .period {
+        color: #7f8c8d;
+        font-style: italic;
+        font-size: 0.9em;
+      }
+
+      .skills-list {
+        background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      .skills-list p {
+        margin: 0;
+        font-weight: 500;
+      }
+
+      .hobbies {
+        background: #f1f2f6;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      .hobby-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .hobby-tag {
+        background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 0.9em;
+        font-weight: 500;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 30px;
+        background: #2c3e50;
+        color: white;
+        font-style: italic;
+      }
+
+      hr {
+        border: none;
+        height: 2px;
+        background: linear-gradient(90deg, #3498db, #e74c3c, #f39c12);
+        margin: 30px 0;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          margin: 10px;
+        }
+
+        .header {
+          padding: 30px 20px;
+        }
+
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .content {
+          padding: 30px 20px;
+        }
+
+        .hobby-tags {
+          justify-content: center;
+        }
+      }
+    </style>
   </head>
   <body>
-    <center>
-      <h1>AZRIL WIJAYA RAMADHAN</h1>
-      <p>085810024605 | azrilwija1013@gmail.com | Jakarta Pusat</p>
-    </center>
+    <div class="container">
+      <div class="header">
+        <img src="img.jpg" class="profile-img" />
+        <h1>AZRIL WIJAYA RAMADHAN</h1>
+        <div class="contact-info">
+          <span>📱 085810024605</span>
+          <span>✉️ azrilwija1013@gmail.com</span>
+          <span>📍 Jakarta Pusat</span>
+        </div>
+      </div>
 
-    
-    <hr />
+      <div class="content">
+        <div class="section">
+          <h2>TENTANG SAYA</h2>
+          <p>
+            Nama panggilan saya Azril, saya remaja yang berumur 18 tahun.
+            Tinggal di Jakarta tepatnya di Jl. Pintu Air 2. Saya suka
+            berjalan-jalan mengendarai motor ketika malam hari dan memiliki
+            passion dalam bidang teknologi informasi.
+          </p>
+        </div>
 
-    <h2>TENTANG SAYA</h2>
-    <p>
-      Nama panggilan saya Azril, saya remaja yang berumur 18 tahun. Tinggal di
-      jakarta tepatnya di jl.pintu air 2. Saya suka berjalan-jalan
-      mengendarai motor ketika malam hari.
-    </p>
+        <div class="section">
+          <h2>PENDIDIKAN</h2>
+          <div class="education-item">
+            <strong>S1 Sistem Informasi - Telkom University</strong>
+            <span class="period">(2024 - Sekarang)</span>
+          </div>
+          <div class="education-item">
+            <strong>SMK Tamansiswa 2 Jakarta</strong>
+            <span class="period">(2021 - 2023)</span>
+          </div>
+          <div class="education-item">
+            <strong>SMPN 39 Jakarta</strong>
+            <span class="period">(2019 - 2021)</span>
+          </div>
+        </div>
 
-    <h2>PENDIDIKAN</h2>
-    <p><b>S1 Sistem Informasi - Telkom University</b> (2024 - Sekarang)</p>
-    <p><b>SMK Tamansiswa 2 Jakarta</b> (2021 - 2023)</p>
-    <p><b>SMPN 39 Jakarta</b> (2019 - 2021)</p>
-   
+        <div class="section">
+          <h2>PENGALAMAN</h2>
+          <div class="experience-item">
+            <strong>Magang / PKL - PT Gavis Inti Solusi</strong>
+            <span class="period">(Januari 2023 - Maret 2023)</span>
+            <p style="margin-top: 10px">
+              Selama 3 bulan saya mendapatkan pengalaman di bidang IT dan
+              belajar bahasa pemrograman baru serta membantu testing website
+              sebelum diberikan kepada client. Pengalaman ini memberikan saya
+              pemahaman yang lebih mendalam tentang dunia kerja di bidang
+              teknologi.
+            </p>
+          </div>
+        </div>
 
-    
-    <h2>PENGALAMAN</h2>
-    <p>
-      <b>Magang / PKL - PT Gavis Inti Solusi</b> (Januari 2023 - Maret 2023)
-    </p>
-    <p>
-      Selama 3 bulan saya mendapatkan pengalaman di bidang IT dan belajar bahasa
-      pemrograman baru serta membantu testing website sebelum diberikan kepada
-      client.
-    </p>
+        <div class="section">
+          <h2>KEAHLIAN</h2>
+          <div class="skills-list">
+            <p>• Memahami bahasa-bahasa dalam Pemrograman Dasar</p>
+            <p>• Website Testing & Quality Assurance</p>
+            <p>• Problem Solving & Analytical Thinking</p>
+          </div>
+        </div>
 
-    <h2>KEAHLIAN</h2>
-    <p>• Memahami bahasa-bahasa dalam Pemrograman Dasar</p>
+        <div class="section">
+          <h2>KESUKAAN</h2>
+          <div class="hobbies">
+            <p>Aktivitas dan hobi yang saya nikmati di waktu luang:</p>
+            <div class="hobby-tags">
+              <span class="hobby-tag">🎮 Gaming</span>
+              <span class="hobby-tag">🎵 Bernyanyi</span>
+              <span class="hobby-tag">🏃 Jogging</span>
+              <span class="hobby-tag">🏸 Badminton</span>
+              <span class="hobby-tag">🏊 Berenang</span>
+              <span class="hobby-tag">🎬 Menonton Film</span>
+              <span class="hobby-tag">🎤 Menonton Konser</span>
+              <span class="hobby-tag">🎧 Mendengarkan Musik</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-    <h2>KESUKAAN</h2>
-    <p>
-      Bermain Game, Bernyanyi, , Jogging, Badminton, Berenang, Menonton Film, Menonton
-      Konser, Mendengarkan Musik
-    </p>
-
-    <hr />
-    <p><i>Jakarta, 20 September 2025</i></p>
+      <div class="footer">
+        <p>Jakarta, 20 September 2025</p>
+      </div>
+    </div>
   </body>
 </html>
